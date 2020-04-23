@@ -6,7 +6,7 @@ sales = c(215, 325, 185, 332, 406, 522, 412, 614, 544, 421, 445, 408)
 
 plot(temp, sales)
 
-calc_correl <- func(a, b) {
+calc_correl <- function(a, b) {
 	sum_a = sum(a)
 	sum_b = sum(b)
 	sum_aSq = sum(a^2)
