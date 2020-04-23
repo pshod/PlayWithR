@@ -21,7 +21,7 @@ calc_correl <- function(a, b) {
 
 r_TempSales = calc_correl(temp, sales)
 
-print("correlation between temp and sales is", r_TempSales, 
+print("correlation between temp and sales is", r_TempSales, "\n")
 
 #pdf(file = "filenameyoudesire.pdf", width = 8, height = 8)
 #dev.off()
