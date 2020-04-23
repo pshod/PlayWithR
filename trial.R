@@ -14,7 +14,7 @@ calc_correl <- function(a, b) {
 	sum_ab = sum(a * b)
 	n = length(a)
 	
-	r_ab = n*sum_ab-sum_a*sum_b / ((n*sum_aSq - sum_a^2)^0.5 * (n*sum_bSq - sum_b^2)^0.5)
+	r_ab = (n*sum_ab-sum_a*sum_b) / ((n*sum_aSq - sum_a^2)^0.5 * (n*sum_bSq - sum_b^2)^0.5)
 
 	r_ab
 }
