@@ -33,10 +33,10 @@ summarise_frame <- function(data) {
 
 	for (i in 1:length(colNames)) {
 		assign(colNames[i], data[,i])
-		if (is.numeric(get(colNames[1])))
+		if (is.numeric(get(colNames[i])))
 			elem = NumColList(get(colNames[i]), colNames[i])
 		else 
-			elem = StringColList(get(colNames[1]))
+			elem = StringColList(get(colNames[i]))
 
 		frameSummary[[i]] = elem
 	}
